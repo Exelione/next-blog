@@ -1,18 +1,6 @@
-:root {
-  --color-primary: #009578;
-  --color-primary-dark: #074b3e;
-  --color-secondary: #252c6a;
-  --color-error: #cc3333;
-  --color-success: #4bb544;
-  --color-grey: #141414;
-}
+
 
 body {
-  background-color: var(--color-grey);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,28 +15,14 @@ body {
 }
 body h1 {
   margin: auto;
-  color: var(--color-primary);
-}
-body p {
-  color: var(--color-primary-dark);
 }
 body h3 {
   margin: auto;
-  color: var(--color-primary);
-}
-body footer {
-  color: var(--color-primary);
-  -webkit-box-shadow: 0px 0px 8px 4px var(--color-primary-dark);
-          box-shadow: 0px 0px 8px 4px var(--color-primary-dark);
-  padding: 7px;
-}
-body header {
-  -webkit-box-shadow: 0px 0px 8px 4px var(--color-primary-dark);
-          box-shadow: 0px 0px 8px 4px var(--color-primary-dark);
-  padding: 7px;
 }
 
 .container {
+  -webkit-box-shadow: 0px 0px 8px 4px rgba(106, 238, 14, 0.09);
+          box-shadow: 0px 0px 8px 4px rgba(106, 238, 14, 0.09);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,49 +32,13 @@ body header {
       -ms-flex-align: center;
           align-items: center;
 }
-.container .blog {
-  margin: 40px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.container ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 22px;
-  margin: 30px 0;
-}
-.container ul li {
-  list-style: none;
-  -webkit-transition: scale 0.3s ease-in-out;
-  transition: scale 0.3s ease-in-out;
-}
-.container ul li:hover {
-  scale: 1.1;
-}
 .container a {
-  color: var(--color-primary);
   text-decoration: none;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background: transparent;
 }
 .container a:hover {
-  color: var(--color-primary-dark);
+  color: rgb(41, 161, 41);
   scale: 1.1;
 }
