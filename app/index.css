@@ -16,6 +16,13 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
+    .active{
+        color: var(--color-primary-dark);
+        cursor: default;
+        &:hover{
+            scale: none;
+        }
+    }
     h1{
         margin: auto;
         color: var(--color-primary);
