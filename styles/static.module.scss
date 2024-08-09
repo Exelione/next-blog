@@ -1,7 +1,4 @@
 
-
-
-
 .container{
     
     .blog{
@@ -10,7 +7,40 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-       
+       .form{
+        margin: 25px 2px;
+        input{
+            margin: 10px 10px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            border: 1px solid var(--color-primary);
+            color: var(--color-primary);
+            background: transparent;
+            transition: all .3s ease-in-out;
+            &:focus{
+                border: 1px solid var(--color-success);
+                outline: none;
+                
+            }
+           &::placeholder{
+            color: var(--color-primary-dark);
+           }
+
+        }
+        button{
+            margin: 10px 0;
+            color: var(--color-primary);
+            background: transparent;
+            border: 1px solid var(--color-primary);
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: all .3s ease-in-out;
+            &:hover{
+                background: var(--color-primary);
+                color: var(--color-primary-dark);
+            }
+        }
+       }
     }
     ul{
         display: flex;

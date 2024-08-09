@@ -20,7 +20,7 @@ export async function generateMetadata({
 }: Props): Promise<Metadata> {
     const post = await getData(id)
     return {
-        title: `${post.title} | Next App`,
+        title: `Next App | ${post.title} `,
     }
 }
 
@@ -30,7 +30,6 @@ const Post = async ({ params: { id } }: Props) => {
     const post = await getData(id)
     return (
         <div>
-
             <h1>{post.title}</h1>
             <p>{post.body}</p>
         </div>

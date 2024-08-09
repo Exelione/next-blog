@@ -1,4 +1,5 @@
 'use client'
+import '@/app/index.css'
 
 export default function ErrorWrapper({
     error}: {error: Error}) {
