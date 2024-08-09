@@ -15,10 +15,12 @@ const Posts = () => {
         state.error,
         state.getAllPosts,
       ], shallow);
-      if(error) return <h1>Error: {error}</h1>
+     
       useEffect(() => {
         getAllPosts()
       }, [getAllPosts])
+      if(error) return <h1>Error: {error}</h1>
+      
 
   return (loading ? <h1>Loading...</h1> : (
     <ul>
