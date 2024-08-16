@@ -7,9 +7,10 @@ export default async function Signin() {
   return ( 
   <div className={styles.blog}>
     <h1>Sign In</h1>
+    <Suspense fallback={<div>Loading...</div>}>
     <GoogleLoginButton />
     <h3>or</h3>
-    <Suspense fallback={<div>Loading...</div>}>
+   
     <SignInForm  />
     </Suspense>
   </div>
