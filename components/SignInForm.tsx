@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 import styles from "@/styles/static.module.css"
 import { signIn } from "next-auth/react"
 import type { FormEventHandler } from "react"
-
+import { Suspense } from 'react';
 
 
 
