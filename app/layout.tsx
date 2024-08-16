@@ -3,6 +3,7 @@ import { Pacifico } from "next/font/google";
 import style from "../styles/static.module.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Providers from "@/components/Providers";
 
 
 const pacifico = Pacifico({ weight: "400", subsets: ["latin"] });
@@ -21,13 +22,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={pacifico.className}>
-        
+        <Providers>
         <Header />
         <main className={style.container}>
         {children}
         </main>
-        
         <Footer />
+        </Providers>
         </body>
     </html>
   );

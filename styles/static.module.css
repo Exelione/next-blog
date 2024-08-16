@@ -1,3 +1,19 @@
+.google {
+  cursor: pointer;
+  margin: 10px 0;
+  color: var(--color-primary);
+  background: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 10px 20px;
+  border-radius: 8px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.google:hover {
+  background: var(--color-primary);
+  color: var(--color-primary-dark);
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7,6 +23,30 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.container .profile {
+  margin: 20px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container .profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid var(--color-primary);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .container .blog {
   margin: 40px 0;
@@ -24,10 +64,10 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
-.container .blog .form {
+.container .blog .form, .container .blog .SIForm {
   margin: 25px 2px;
 }
-.container .blog .form input {
+.container .blog .form input, .container .blog .SIForm input {
   margin: 10px 10px;
   padding: 10px 20px;
   border-radius: 8px;
@@ -37,26 +77,26 @@
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.container .blog .form input:focus {
+.container .blog .form input:focus, .container .blog .SIForm input:focus {
   border: 1px solid var(--color-success);
   outline: none;
 }
-.container .blog .form input::-webkit-input-placeholder {
+.container .blog .form input::-webkit-input-placeholder, .container .blog .SIForm input::-webkit-input-placeholder {
   color: var(--color-primary-dark);
 }
-.container .blog .form input::-moz-placeholder {
+.container .blog .form input::-moz-placeholder, .container .blog .SIForm input::-moz-placeholder {
   color: var(--color-primary-dark);
 }
-.container .blog .form input:-ms-input-placeholder {
+.container .blog .form input:-ms-input-placeholder, .container .blog .SIForm input:-ms-input-placeholder {
   color: var(--color-primary-dark);
 }
-.container .blog .form input::-ms-input-placeholder {
+.container .blog .form input::-ms-input-placeholder, .container .blog .SIForm input::-ms-input-placeholder {
   color: var(--color-primary-dark);
 }
-.container .blog .form input::placeholder {
+.container .blog .form input::placeholder, .container .blog .SIForm input::placeholder {
   color: var(--color-primary-dark);
 }
-.container .blog .form button {
+.container .blog .form button, .container .blog .SIForm button {
   cursor: pointer;
   margin: 10px 0;
   color: var(--color-primary);
@@ -67,9 +107,21 @@
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.container .blog .form button:hover {
+.container .blog .form button:hover, .container .blog .SIForm button:hover {
   background: var(--color-primary);
   color: var(--color-primary-dark);
+}
+.container .blog .SIForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .container ul {
   display: -webkit-box;
@@ -88,7 +140,7 @@
   transition: scale 0.3s ease-in-out;
 }
 .container ul li:hover {
-  scale: 1.1;
+  scale: 1.01;
 }
 .container a {
   color: var(--color-primary);
